@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C820E2A7767980C11B86F25 /* NewTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3949C15D514DBB4887881D26 /* NewTestView.swift */; };
+		1E4C48FE4D67ED7B93C5AB5D /* TestDataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB0F7D4925D3B291A22A191 /* TestDataValidator.swift */; };
+		21355331C2A2F21A4C941500 /* Lact8Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4416CF681C1070511D1647 /* Lact8Error.swift */; };
+		2AC5A8530A09638EC96BC5ED /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3083FE45F30CD2603399DC /* HapticManager.swift */; };
+		2FE3EF7DEB190FA7D35BD21D /* LactateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F178D814BB032F119AE18A /* LactateTest.swift */; };
+		377595892BB0C16BDF40A7B3 /* ThresholdCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1317F1A67B0DD17D110D302C /* ThresholdCalculatorTests.swift */; };
+		3816D436408A04A825A86A48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14DA0F7EE98715FEEE3DFD2 /* ContentView.swift */; };
+		3EC682BCCBAFA585B128CE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F699F9A474CBDA967EF192 /* Assets.xcassets */; };
+		3F88C13F5850A3BF723EA754 /* NewTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B60690C8160B6F231C4D9 /* NewTestViewModel.swift */; };
+		43AA129CC5DFAAB6B66E2705 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842C19B9E8A1B249131EE96 /* SettingsView.swift */; };
+		46796D6870A605F9ACCB80A8 /* RawDataTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F7F26C359150A1A9CD7E5 /* RawDataTable.swift */; };
+		46854F7645F4C489E15D0EDB /* HeartRateResponseChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E2D365CEE6E656A57970BB /* HeartRateResponseChart.swift */; };
+		47ED9117149C80F1980DE70E /* TrainingZoneCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C08E46D72B9AFE76C033A /* TrainingZoneCalculator.swift */; };
+		5A968642768A7B49BFDAE431 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6E0B3C4E1FE2D4C9D2663 /* TrendsView.swift */; };
+		5CB7D9F1A9E43CFE6526DB16 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4C9C0051E985E672AE7452 /* Persistence.swift */; };
+		651AEDA88A4DB1FBFA69F30D /* ThresholdCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF09B737A237B26BED2071 /* ThresholdCalculator.swift */; };
+		6B6C7B76020CA8BFC15A5AC5 /* ThresholdCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5973813168DE266A2FB7CCCB /* ThresholdCard.swift */; };
+		6F48109A92515EA0EB55342C /* TestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F237B0FE1A5BDAC171B3004 /* TestDetailView.swift */; };
+		8111F9D415DD51170A1932A0 /* TrainingZoneCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D741DFCB747A86E03D79E5BE /* TrainingZoneCalculatorTests.swift */; };
+		8143480E93C65E0D375D82D5 /* TestStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817E46520CEF011079F3B188 /* TestStep.swift */; };
+		9D3EDFCCD1A54F1D3D77CAD5 /* LactateCurveChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DC6949BF802A474D556CC /* LactateCurveChart.swift */; };
+		A7E14D571F502EBA2F88A811 /* DataExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59B9A2C283A1F8EA34E9BD /* DataExportManager.swift */; };
+		AD6EEBCC4456C56C9E178A36 /* ZoneConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A04D067615E345ED8420119 /* ZoneConstants.swift */; };
+		B219DEC3F4EA7F1D627E8370 /* ThresholdConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269BD222D6953F7E208ACA9D /* ThresholdConstants.swift */; };
+		BDABF0117CFAA9801AF6F8FC /* TestResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB270B482DFF592E3B661A2 /* TestResultsView.swift */; };
+		D20D5CE8E0D71E0F4FF2139A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FCF6825EB1C796F666816 /* OnboardingView.swift */; };
+		D6355342606F0CE0DD22EE58 /* TestHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5ABD55D1DA07006A508F0 /* TestHistoryView.swift */; };
+		E4A8E041F5D462C6AD67D335 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DD1F6E377FFB2434E722A /* StatCard.swift */; };
+		E69A8FB938CEDF066AEE46D3 /* TrainingZoneRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD221BCBF298452F554AC4 /* TrainingZoneRow.swift */; };
+		FA4CCDF83B8FADF5D49D4BFD /* Lact8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 970E3A4D07AAED22FB0642ED /* Lact8.xcdatamodeld */; };
+		FAF24736CF16934A85A3AE44 /* Lact8App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7795E35BA606BE6ABDF602DB /* Lact8App.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		583B83355684038733FEA1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D1B20B4B4328A8485E4971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9968CF43F29C7E43D899D47C;
+			remoteInfo = Lact8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019A05BBACBCBEC16FA86771 /* Lact8.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lact8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1317F1A67B0DD17D110D302C /* ThresholdCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdCalculatorTests.swift; sourceTree = "<group>"; };
+		1A04D067615E345ED8420119 /* ZoneConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneConstants.swift; sourceTree = "<group>"; };
+		1F237B0FE1A5BDAC171B3004 /* TestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailView.swift; sourceTree = "<group>"; };
+		1F8DC6949BF802A474D556CC /* LactateCurveChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LactateCurveChart.swift; sourceTree = "<group>"; };
+		269BD222D6953F7E208ACA9D /* ThresholdConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdConstants.swift; sourceTree = "<group>"; };
+		2C4416CF681C1070511D1647 /* Lact8Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lact8Error.swift; sourceTree = "<group>"; };
+		2E2B60690C8160B6F231C4D9 /* NewTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestViewModel.swift; sourceTree = "<group>"; };
+		3842C19B9E8A1B249131EE96 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3949C15D514DBB4887881D26 /* NewTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTestView.swift; sourceTree = "<group>"; };
+		3A59B9A2C283A1F8EA34E9BD /* DataExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportManager.swift; sourceTree = "<group>"; };
+		41E2D365CEE6E656A57970BB /* HeartRateResponseChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateResponseChart.swift; sourceTree = "<group>"; };
+		4D3083FE45F30CD2603399DC /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		5973813168DE266A2FB7CCCB /* ThresholdCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdCard.swift; sourceTree = "<group>"; };
+		6BB270B482DFF592E3B661A2 /* TestResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultsView.swift; sourceTree = "<group>"; };
+		6ECD221BCBF298452F554AC4 /* TrainingZoneRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingZoneRow.swift; sourceTree = "<group>"; };
+		7795E35BA606BE6ABDF602DB /* Lact8App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lact8App.swift; sourceTree = "<group>"; };
+		7F1C08E46D72B9AFE76C033A /* TrainingZoneCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingZoneCalculator.swift; sourceTree = "<group>"; };
+		7F3FCF6825EB1C796F666816 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		817E46520CEF011079F3B188 /* TestStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStep.swift; sourceTree = "<group>"; };
+		8B1DD1F6E377FFB2434E722A /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		9D4C9C0051E985E672AE7452 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A14DA0F7EE98715FEEE3DFD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A14F7F26C359150A1A9CD7E5 /* RawDataTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataTable.swift; sourceTree = "<group>"; };
+		ADCF09B737A237B26BED2071 /* ThresholdCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdCalculator.swift; sourceTree = "<group>"; };
+		B4F178D814BB032F119AE18A /* LactateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LactateTest.swift; sourceTree = "<group>"; };
+		B7F699F9A474CBDA967EF192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4E6E0B3C4E1FE2D4C9D2663 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
+		CF7C8B38CC97B2A6D67C2A24 /* Lact8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lact8.xcdatamodel; sourceTree = "<group>"; };
+		D61551FD9F311896058395B1 /* Lact8Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Lact8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D741DFCB747A86E03D79E5BE /* TrainingZoneCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingZoneCalculatorTests.swift; sourceTree = "<group>"; };
+		DAB0F7D4925D3B291A22A191 /* TestDataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataValidator.swift; sourceTree = "<group>"; };
+		F6F5ABD55D1DA07006A508F0 /* TestHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		001A190582138D43B9637477 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7F699F9A474CBDA967EF192 /* Assets.xcassets */,
+				970E3A4D07AAED22FB0642ED /* Lact8.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0612ECCDA2602F699462C589 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4D3083FE45F30CD2603399DC /* HapticManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		082E6484E2F69ACEBA36D0D1 /* Lact8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1317F1A67B0DD17D110D302C /* ThresholdCalculatorTests.swift */,
+				D741DFCB747A86E03D79E5BE /* TrainingZoneCalculatorTests.swift */,
+			);
+			path = Lact8Tests;
+			sourceTree = "<group>";
+		};
+		0D8253B91E147E5699445F5B /* NewTest */ = {
+			isa = PBXGroup;
+			children = (
+				3949C15D514DBB4887881D26 /* NewTestView.swift */,
+			);
+			path = NewTest;
+			sourceTree = "<group>";
+		};
+		0F1122F7D202BEFF9065DEC1 = {
+			isa = PBXGroup;
+			children = (
+				894F81DD179F054B70357E93 /* App */,
+				E0B17EEC86EC630089C41D6C /* Constants */,
+				F9FE8717D6E11AA643EA4DA9 /* Errors */,
+				082E6484E2F69ACEBA36D0D1 /* Lact8Tests */,
+				FF541B73144B3118BD8A081E /* Models */,
+				2E5D283A868F06F8DC84621E /* Persistence */,
+				001A190582138D43B9637477 /* Resources */,
+				87F595D68D215DD853B6FA41 /* Services */,
+				0612ECCDA2602F699462C589 /* Utilities */,
+				5DA0F8732F77676CAEEF5C86 /* Validation */,
+				4DE05DE0D3FC18B2AD530F63 /* ViewModels */,
+				674B14D6C017FCD019980886 /* Views */,
+				7AD4E7F43C9C49DF67CDB271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		162BECBD8DC32767107DBFE6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3842C19B9E8A1B249131EE96 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2E5D283A868F06F8DC84621E /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				9D4C9C0051E985E672AE7452 /* Persistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		4DE05DE0D3FC18B2AD530F63 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E2B60690C8160B6F231C4D9 /* NewTestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4E0597479E23B2A893BC2FA3 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				1F237B0FE1A5BDAC171B3004 /* TestDetailView.swift */,
+				6BB270B482DFF592E3B661A2 /* TestResultsView.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		5275B5EE3165120232C1C6D4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7F3FCF6825EB1C796F666816 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5DA0F8732F77676CAEEF5C86 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				DAB0F7D4925D3B291A22A191 /* TestDataValidator.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		674B14D6C017FCD019980886 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A14DA0F7EE98715FEEE3DFD2 /* ContentView.swift */,
+				FA003F71BCA165BCEFD23A73 /* Components */,
+				71EFBD53865A151BCC6AE3D3 /* History */,
+				0D8253B91E147E5699445F5B /* NewTest */,
+				5275B5EE3165120232C1C6D4 /* Onboarding */,
+				4E0597479E23B2A893BC2FA3 /* Results */,
+				162BECBD8DC32767107DBFE6 /* Settings */,
+				D880225CE27A9FBD388419BE /* Trends */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71EFBD53865A151BCC6AE3D3 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F6F5ABD55D1DA07006A508F0 /* TestHistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		7AD4E7F43C9C49DF67CDB271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				019A05BBACBCBEC16FA86771 /* Lact8.app */,
+				D61551FD9F311896058395B1 /* Lact8Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F595D68D215DD853B6FA41 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A59B9A2C283A1F8EA34E9BD /* DataExportManager.swift */,
+				ADCF09B737A237B26BED2071 /* ThresholdCalculator.swift */,
+				7F1C08E46D72B9AFE76C033A /* TrainingZoneCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		894F81DD179F054B70357E93 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7795E35BA606BE6ABDF602DB /* Lact8App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D880225CE27A9FBD388419BE /* Trends */ = {
+			isa = PBXGroup;
+			children = (
+				C4E6E0B3C4E1FE2D4C9D2663 /* TrendsView.swift */,
+			);
+			path = Trends;
+			sourceTree = "<group>";
+		};
+		E0B17EEC86EC630089C41D6C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				269BD222D6953F7E208ACA9D /* ThresholdConstants.swift */,
+				1A04D067615E345ED8420119 /* ZoneConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F9FE8717D6E11AA643EA4DA9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2C4416CF681C1070511D1647 /* Lact8Error.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		FA003F71BCA165BCEFD23A73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				41E2D365CEE6E656A57970BB /* HeartRateResponseChart.swift */,
+				1F8DC6949BF802A474D556CC /* LactateCurveChart.swift */,
+				A14F7F26C359150A1A9CD7E5 /* RawDataTable.swift */,
+				8B1DD1F6E377FFB2434E722A /* StatCard.swift */,
+				5973813168DE266A2FB7CCCB /* ThresholdCard.swift */,
+				6ECD221BCBF298452F554AC4 /* TrainingZoneRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FF541B73144B3118BD8A081E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4F178D814BB032F119AE18A /* LactateTest.swift */,
+				817E46520CEF011079F3B188 /* TestStep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		"TEMP_4F82CEF1-A282-4278-88EB-24AEC116219B" /* lact8-iphone */ = {
+			isa = PBXGroup;
+			children = (
+				4DE05DE0D3FC18B2AD530F63 /* ViewModels */,
+				894F81DD179F054B70357E93 /* App */,
+				E0B17EEC86EC630089C41D6C /* Constants */,
+				001A190582138D43B9637477 /* Resources */,
+				FF541B73144B3118BD8A081E /* Models */,
+				0612ECCDA2602F699462C589 /* Utilities */,
+				2E5D283A868F06F8DC84621E /* Persistence */,
+				F9FE8717D6E11AA643EA4DA9 /* Errors */,
+				674B14D6C017FCD019980886 /* Views */,
+				87F595D68D215DD853B6FA41 /* Services */,
+				5DA0F8732F77676CAEEF5C86 /* Validation */,
+			);
+			path = "lact8-iphone";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9968CF43F29C7E43D899D47C /* Lact8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BB0B9650EA934138720390 /* Build configuration list for PBXNativeTarget "Lact8" */;
+			buildPhases = (
+				57D820B57C94CB648A71CA2A /* Sources */,
+				FBBF0064627C5FD74CC296F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lact8;
+			packageProductDependencies = (
+			);
+			productName = Lact8;
+			productReference = 019A05BBACBCBEC16FA86771 /* Lact8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7F4832818A0F1E366174218 /* Lact8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85384561F6119339E5B9546A /* Build configuration list for PBXNativeTarget "Lact8Tests" */;
+			buildPhases = (
+				3C279D755F41FECF21668869 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				107BF22F6041D7EB61D95E35 /* PBXTargetDependency */,
+			);
+			name = Lact8Tests;
+			packageProductDependencies = (
+			);
+			productName = Lact8Tests;
+			productReference = D61551FD9F311896058395B1 /* Lact8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D1B20B4B4328A8485E4971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9968CF43F29C7E43D899D47C = {
+						DevelopmentTeam = "";
+					};
+					D7F4832818A0F1E366174218 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = ED658115DCCF112D8176C58F /* Build configuration list for PBXProject "Lact8" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0F1122F7D202BEFF9065DEC1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9968CF43F29C7E43D899D47C /* Lact8 */,
+				D7F4832818A0F1E366174218 /* Lact8Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBBF0064627C5FD74CC296F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC682BCCBAFA585B128CE54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C279D755F41FECF21668869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377595892BB0C16BDF40A7B3 /* ThresholdCalculatorTests.swift in Sources */,
+				8111F9D415DD51170A1932A0 /* TrainingZoneCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D820B57C94CB648A71CA2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D436408A04A825A86A48 /* ContentView.swift in Sources */,
+				A7E14D571F502EBA2F88A811 /* DataExportManager.swift in Sources */,
+				2AC5A8530A09638EC96BC5ED /* HapticManager.swift in Sources */,
+				46854F7645F4C489E15D0EDB /* HeartRateResponseChart.swift in Sources */,
+				FA4CCDF83B8FADF5D49D4BFD /* Lact8.xcdatamodeld in Sources */,
+				FAF24736CF16934A85A3AE44 /* Lact8App.swift in Sources */,
+				21355331C2A2F21A4C941500 /* Lact8Error.swift in Sources */,
+				9D3EDFCCD1A54F1D3D77CAD5 /* LactateCurveChart.swift in Sources */,
+				2FE3EF7DEB190FA7D35BD21D /* LactateTest.swift in Sources */,
+				1C820E2A7767980C11B86F25 /* NewTestView.swift in Sources */,
+				3F88C13F5850A3BF723EA754 /* NewTestViewModel.swift in Sources */,
+				D20D5CE8E0D71E0F4FF2139A /* OnboardingView.swift in Sources */,
+				5CB7D9F1A9E43CFE6526DB16 /* Persistence.swift in Sources */,
+				46796D6870A605F9ACCB80A8 /* RawDataTable.swift in Sources */,
+				43AA129CC5DFAAB6B66E2705 /* SettingsView.swift in Sources */,
+				E4A8E041F5D462C6AD67D335 /* StatCard.swift in Sources */,
+				1E4C48FE4D67ED7B93C5AB5D /* TestDataValidator.swift in Sources */,
+				6F48109A92515EA0EB55342C /* TestDetailView.swift in Sources */,
+				D6355342606F0CE0DD22EE58 /* TestHistoryView.swift in Sources */,
+				BDABF0117CFAA9801AF6F8FC /* TestResultsView.swift in Sources */,
+				8143480E93C65E0D375D82D5 /* TestStep.swift in Sources */,
+				651AEDA88A4DB1FBFA69F30D /* ThresholdCalculator.swift in Sources */,
+				6B6C7B76020CA8BFC15A5AC5 /* ThresholdCard.swift in Sources */,
+				B219DEC3F4EA7F1D627E8370 /* ThresholdConstants.swift in Sources */,
+				47ED9117149C80F1980DE70E /* TrainingZoneCalculator.swift in Sources */,
+				E69A8FB938CEDF066AEE46D3 /* TrainingZoneRow.swift in Sources */,
+				5A968642768A7B49BFDAE431 /* TrendsView.swift in Sources */,
+				AD6EEBCC4456C56C9E178A36 /* ZoneConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		107BF22F6041D7EB61D95E35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9968CF43F29C7E43D899D47C /* Lact8 */;
+			targetProxy = 583B83355684038733FEA1DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FA19ED8C21B163CE9B6CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6A626577350D8F91D83932D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenReeve.Lact8Tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lact8.app/Lact8";
+			};
+			name = Debug;
+		};
+		78B4C5853E4F2BD9289A0226 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9E1F3D340BA11546DA43C544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenReeve.Lact8;
+				PRODUCT_NAME = Lact8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0C0617AC2CE666D97B52FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenReeve.Lact8;
+				PRODUCT_NAME = Lact8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E029D0F92FD39E7B93D3FEF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BenReeve.Lact8Tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lact8.app/Lact8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85384561F6119339E5B9546A /* Build configuration list for PBXNativeTarget "Lact8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A626577350D8F91D83932D2 /* Debug */,
+				E029D0F92FD39E7B93D3FEF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0BB0B9650EA934138720390 /* Build configuration list for PBXNativeTarget "Lact8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C0617AC2CE666D97B52FB2 /* Debug */,
+				9E1F3D340BA11546DA43C544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED658115DCCF112D8176C58F /* Build configuration list for PBXProject "Lact8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FA19ED8C21B163CE9B6CED /* Debug */,
+				78B4C5853E4F2BD9289A0226 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		970E3A4D07AAED22FB0642ED /* Lact8.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF7C8B38CC97B2A6D67C2A24 /* Lact8.xcdatamodel */,
+			);
+			currentVersion = CF7C8B38CC97B2A6D67C2A24 /* Lact8.xcdatamodel */;
+			path = Lact8.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 12D1B20B4B4328A8485E4971 /* Project object */;
+}

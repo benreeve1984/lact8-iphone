@@ -1,0 +1,54 @@
+name: Lact8
+options:
+  bundleIdPrefix: com.BenReeve
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: 16.0
+settings:
+  DEVELOPMENT_TEAM: ""
+  MARKETING_VERSION: 1.0.0
+  CURRENT_PROJECT_VERSION: 1
+targets:
+  Lact8:
+    type: application
+    platform: iOS
+    deploymentTarget: 16.0
+    sources:
+      - path: .
+        excludes:
+          - "**/*.xcodeproj"
+          - "**/*.xcworkspace"
+          - "**/.build"
+          - "**/.swiftpm"
+          - "**/Package.swift"
+          - "**/project.yml"
+          - "**/Tests"
+          - "**/Lact8Tests"
+          - "logo.png"
+        includes:
+          - "**/*.swift"
+          - "**/*.xcdatamodeld"
+      - path: Resources/Assets.xcassets
+      - path: Resources/Lact8.xcdatamodeld
+    settings:
+      INFOPLIST_FILE: Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: com.BenReeve.Lact8
+      PRODUCT_NAME: Lact8
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      SWIFT_VERSION: 5.0
+      TARGETED_DEVICE_FAMILY: "1,2"
+      ENABLE_PREVIEWS: YES
+
+  Lact8Tests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: 16.0
+    sources:
+      - path: Lact8Tests
+        includes:
+          - "**/*.swift"
+    dependencies:
+      - target: Lact8
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.BenReeve.Lact8Tests
+      SWIFT_VERSION: 5.0

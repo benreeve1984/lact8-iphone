@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:lact8-iphone}",
+            "name": "Debug Lact8",
+            "program": "${workspaceFolder:lact8-iphone}/.build/debug/Lact8",
+            "preLaunchTask": "swift: Build Debug Lact8"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:lact8-iphone}",
+            "name": "Release Lact8",
+            "program": "${workspaceFolder:lact8-iphone}/.build/release/Lact8",
+            "preLaunchTask": "swift: Build Release Lact8"
+        }
+    ]
+}
