@@ -51,6 +51,19 @@ struct SettingsView: View {
                     }
                 }
 
+                Section("Acknowledgements") {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("The lactate testing methodology in this app is based on what I learned from Alan Couzens via the MadCrew Forum and his excellent Substack book.")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+
+                        Link(destination: URL(string: "https://alancouzens.substack.com/")!) {
+                            Label("Alan Couzens on Substack", systemImage: "book.fill")
+                        }
+                    }
+                    .padding(.vertical, 4)
+                }
+
                 Section("About") {
                     HStack {
                         Text("Version")
@@ -66,7 +79,7 @@ struct SettingsView: View {
                             .foregroundColor(.secondary)
                     }
 
-                    Link(destination: URL(string: "https://github.com/anthropics/claude-code")!) {
+                    Link(destination: URL(string: "https://github.com/benreeve1984/lact8-iphone")!) {
                         Label("Source Code", systemImage: "chevron.left.forwardslash.chevron.right")
                     }
                 }

@@ -211,7 +211,7 @@ private struct HowToTestPage: View {
                     .padding(.top)
 
                 HStack(spacing: 16) {
-                    EquipmentItem(icon: "drop.fill", name: "Lactate Meter")
+                    EquipmentItem(icon: "drop.fill", name: "Lactate")
                     EquipmentItem(icon: "heart.fill", name: "HR Monitor")
                     EquipmentItem(icon: "speedometer", name: "Power/Pace")
                 }
@@ -237,16 +237,16 @@ private struct UnderstandingResultsPage: View {
 
                 ThresholdExplanation(
                     title: "LT1 - Aerobic Threshold",
-                    description: "The point where lactate first begins to rise above baseline. Below this, you can exercise for hours. This marks the top of your easy/recovery zone.",
+                    description: "Detected when lactate first rises significantly (>0.3 mmol/L) above baseline. Below this intensity, you can exercise for hours. This marks the top of your easy/recovery zone.",
                     color: .green,
-                    typical: "~2.0 mmol/L"
+                    typical: "First rise"
                 )
 
                 ThresholdExplanation(
                     title: "LT2 - Anaerobic Threshold",
-                    description: "The maximum sustainable intensity. Above this, lactate accumulates rapidly and fatigue sets in quickly. Often called 'threshold pace'.",
+                    description: "Calculated using the D-max method - the point of maximum curvature in your lactate response. Above this, lactate accumulates rapidly. Often called 'threshold pace'.",
                     color: .orange,
-                    typical: "~4.0 mmol/L"
+                    typical: "D-max"
                 )
 
                 // Disclaimer
