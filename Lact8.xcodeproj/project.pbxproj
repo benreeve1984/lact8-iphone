@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		019A05BBACBCBEC16FA86771 /* Lact8.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Lact8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A05BBACBCBEC16FA86771 /* Lact8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lact8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1317F1A67B0DD17D110D302C /* ThresholdCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdCalculatorTests.swift; sourceTree = "<group>"; };
 		1A04D067615E345ED8420119 /* ZoneConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneConstants.swift; sourceTree = "<group>"; };
 		1F237B0FE1A5BDAC171B3004 /* TestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailView.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		B7F699F9A474CBDA967EF192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E6E0B3C4E1FE2D4C9D2663 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
 		CF7C8B38CC97B2A6D67C2A24 /* Lact8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lact8.xcdatamodel; sourceTree = "<group>"; };
-		D61551FD9F311896058395B1 /* Lact8Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Lact8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61551FD9F311896058395B1 /* Lact8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lact8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D741DFCB747A86E03D79E5BE /* TrainingZoneCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingZoneCalculatorTests.swift; sourceTree = "<group>"; };
 		DAB0F7D4925D3B291A22A191 /* TestDataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataValidator.swift; sourceTree = "<group>"; };
 		F6F5ABD55D1DA07006A508F0 /* TestHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHistoryView.swift; sourceTree = "<group>"; };
@@ -286,24 +286,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		"TEMP_4F82CEF1-A282-4278-88EB-24AEC116219B" /* lact8-iphone */ = {
-			isa = PBXGroup;
-			children = (
-				4DE05DE0D3FC18B2AD530F63 /* ViewModels */,
-				894F81DD179F054B70357E93 /* App */,
-				E0B17EEC86EC630089C41D6C /* Constants */,
-				001A190582138D43B9637477 /* Resources */,
-				FF541B73144B3118BD8A081E /* Models */,
-				0612ECCDA2602F699462C589 /* Utilities */,
-				2E5D283A868F06F8DC84621E /* Persistence */,
-				F9FE8717D6E11AA643EA4DA9 /* Errors */,
-				674B14D6C017FCD019980886 /* Views */,
-				87F595D68D215DD853B6FA41 /* Services */,
-				5DA0F8732F77676CAEEF5C86 /* Validation */,
-			);
-			path = "lact8-iphone";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,11 +332,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					9968CF43F29C7E43D899D47C = {
-						DevelopmentTeam = "";
-					};
 					D7F4832818A0F1E366174218 = {
 						DevelopmentTeam = "";
 					};
@@ -370,7 +349,6 @@
 			);
 			mainGroup = 0F1122F7D202BEFF9065DEC1;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -486,6 +464,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -507,6 +486,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -570,6 +550,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -584,6 +565,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -595,8 +577,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5CVYV4ENJX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -615,8 +599,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5CVYV4ENJX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
