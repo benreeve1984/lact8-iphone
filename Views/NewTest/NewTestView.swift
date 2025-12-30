@@ -15,14 +15,16 @@ struct NewTestView: View {
         NavigationView {
             VStack(spacing: 0) {
                 testTypeSection
-                headerSection
-                
+
                 ScrollView {
-                    VStack(spacing: 16) {
-                        stepsSection
-                        actionButtons
+                    VStack(spacing: 0) {
+                        headerSection
+                        VStack(spacing: 16) {
+                            stepsSection
+                            actionButtons
+                        }
+                        .padding()
                     }
-                    .padding()
                     .frame(maxWidth: 600)
                     .frame(maxWidth: .infinity)
                 }
@@ -38,15 +40,18 @@ struct NewTestView: View {
     }
     
     private var headerSection: some View {
-        HStack {
+        HStack(spacing: 8) {
             Text("Step")
-                .frame(width: 50)
+                .frame(width: 30)
             Text("Intensity")
                 .frame(maxWidth: .infinity)
             Text("HR")
                 .frame(maxWidth: .infinity)
             Text("Lactate")
                 .frame(maxWidth: .infinity)
+            // Spacer for delete button column
+            Color.clear
+                .frame(width: 24)
         }
         .font(.caption)
         .foregroundColor(.secondary)
