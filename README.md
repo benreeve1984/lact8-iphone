@@ -95,3 +95,4 @@ This app is for informational purposes only and does not constitute medical advi
 
 MIT License - see LICENSE file for details.
 
+<!-- CI/CD trigger -->
