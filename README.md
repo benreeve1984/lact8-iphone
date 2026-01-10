@@ -94,3 +94,4 @@ This app is for informational purposes only and does not constitute medical advi
 ## License
 
 MIT License - see LICENSE file for details.
+
