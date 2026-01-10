@@ -57,7 +57,9 @@ struct OnboardingView: View {
                         .buttonStyle(.borderedProminent)
                     } else {
                         Button("Get Started") {
-                            hasSeenOnboarding = true
+                            withAnimation {
+                                hasSeenOnboarding = true
+                            }
                         }
                         .buttonStyle(.borderedProminent)
                     }

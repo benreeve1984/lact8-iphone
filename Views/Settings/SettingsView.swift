@@ -4,6 +4,7 @@ struct SettingsView: View {
     @AppStorage("defaultSportType") private var defaultSportType = "cycling"
     @AppStorage("preferredZoneSystem") private var preferredZoneSystem = "threeZone"
     @AppStorage("intensityUnit") private var intensityUnit = "watts"
+    @AppStorage("decimalSeparator") private var decimalSeparator = "."
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = true
 
     @State private var showClearDataAlert = false
@@ -32,6 +33,11 @@ struct SettingsView: View {
                         Text("Watts").tag("watts")
                         Text("km/h").tag("kmh")
                         Text("min/km").tag("pace")
+                    }
+
+                    Picker("Decimal Separator", selection: $decimalSeparator) {
+                        Text("Period (1.5)").tag(".")
+                        Text("Comma (1,5)").tag(",")
                     }
                 }
 

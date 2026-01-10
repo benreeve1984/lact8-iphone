@@ -160,7 +160,7 @@ enum TestDataValidator {
     // MARK: - Quick Validation Checks
 
     static func isValidIntensity(_ value: String, testType: LactateTest.TestType) -> Bool {
-        guard let intensity = Double(value) else { return false }
+        guard let intensity = Double(value.replacingOccurrences(of: ",", with: ".")) else { return false }
         return validateIntensity(intensity, testType: testType) == nil
     }
 
@@ -170,7 +170,7 @@ enum TestDataValidator {
     }
 
     static func isValidLactate(_ value: String) -> Bool {
-        guard let lactate = Double(value) else { return false }
+        guard let lactate = Double(value.replacingOccurrences(of: ",", with: ".")) else { return false }
         return validateLactate(lactate) == nil
     }
 }
