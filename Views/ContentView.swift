@@ -6,7 +6,7 @@ struct ContentView: View {
 
     var body: some View {
         if !hasSeenOnboarding {
-            OnboardingView(hasSeenOnboarding: $hasSeenOnboarding)
+            OnboardingView()
         } else {
             TabView(selection: $selectedTab) {
                 TrendsView()

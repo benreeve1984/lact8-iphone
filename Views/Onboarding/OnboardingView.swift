@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @Binding var hasSeenOnboarding: Bool
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var currentPage = 0
+    var onComplete: (() -> Void)?
 
     private let totalPages = 4
 
@@ -60,6 +61,7 @@ struct OnboardingView: View {
                             withAnimation {
                                 hasSeenOnboarding = true
                             }
+                            onComplete?()
                         }
                         .buttonStyle(.borderedProminent)
                     }
@@ -405,5 +407,5 @@ private struct ThresholdExplanation: View {
 }
 
 #Preview {
-    OnboardingView(hasSeenOnboarding: .constant(false))
+    OnboardingView()
 }
