@@ -16,15 +16,15 @@ struct TestStep: Identifiable, Codable {
     }
     
     var intensityValue: Double? {
-        Double(intensity)
+        Double(intensity.replacingOccurrences(of: ",", with: "."))
     }
-    
+
     var heartRateValue: Int? {
         Int(heartRate)
     }
-    
+
     var lactateValue: Double? {
-        Double(lactate)
+        Double(lactate.replacingOccurrences(of: ",", with: "."))
     }
     
     var isValid: Bool {
