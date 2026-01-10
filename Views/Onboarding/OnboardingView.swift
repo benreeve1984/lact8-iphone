@@ -290,6 +290,7 @@ private struct FeatureRow: View {
                 Text(description)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
     }
