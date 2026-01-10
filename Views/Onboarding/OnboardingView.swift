@@ -1,8 +1,11 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @Binding var hasSeenOnboarding: Bool
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var currentPage = 0
+
+    /// Optional dismiss action for replay mode (when shown from Settings)
+    var onDismiss: (() -> Void)? = nil
 
     private let totalPages = 4
 
@@ -57,7 +60,9 @@ struct OnboardingView: View {
                         .buttonStyle(.borderedProminent)
                     } else {
                         Button("Get Started") {
-                            withAnimation {
+                            if let onDismiss = onDismiss {
+                                onDismiss()
+                            } else {
                                 hasSeenOnboarding = true
                             }
                         }
@@ -405,5 +410,5 @@ private struct ThresholdExplanation: View {
 }
 
 #Preview {
-    OnboardingView(hasSeenOnboarding: .constant(false))
+    OnboardingView()
 }

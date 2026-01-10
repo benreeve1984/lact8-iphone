@@ -111,7 +111,7 @@ struct SettingsView: View {
                 Text("This will permanently delete all your lactate tests. This action cannot be undone.")
             }
             .fullScreenCover(isPresented: $showOnboarding) {
-                OnboardingView(hasSeenOnboarding: .constant(true))
+                OnboardingView(onDismiss: { showOnboarding = false })
                     .overlay(alignment: .topTrailing) {
                         Button {
                             showOnboarding = false
